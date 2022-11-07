@@ -2,7 +2,7 @@ div {
     border: 1px dotted red;
 }
 
-.container {
+.etchContainer {
     display: grid;
     grid-template-columns: repeat(16, auto);
     justify-content: center;
@@ -12,9 +12,7 @@ div {
 .etchBox {
     height: 2em;
     width: 2em;
+    background: white;
 }
 
-.etchBox:hover {
-    background: gray;
-}
 
