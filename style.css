@@ -2,14 +2,19 @@ div {
     border: 1px dotted red;
 }
 
-#container {
+.container {
     display: grid;
     grid-template-columns: repeat(16, auto);
     justify-content: center;
     padding: 2em;
 }
 
-#etchBox {
+.etchBox {
     height: 2em;
     width: 2em;
 }
+
+.etchBox:hover {
+    background: gray;
+}
+

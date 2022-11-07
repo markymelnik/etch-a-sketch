@@ -1,17 +1,14 @@
 
-window.onload = function() {
-    let count = 16,
-    etchGrid = document.getElementById('container'),
-    etchBox,
-    etchFragment = document.createDocumentFragment();
+const container = document.querySelector('.container');
 
-    for (let i = 1; i <= count; i++) {
-        for (let j = 1; j <= count; j++) {
-            etchBox = document.createElement('div');
-            etchBox.id = 'etchBox';
-            etchFragment.appendChild(etchBox);
-        }
+
+function getGrid(dimension) {
+    container.style.gridTemplateColumns = `repeat(${dimension}, auto)`;
+    for (let i = 1; i <= (dimension * dimension); i++) {
+        const etchBox = document.createElement('div');
+        etchBox.classList.add('etchBox');
+        container.appendChild(etchBox);
     }
-    etchGrid.appendChild(etchFragment);
-}
+};
 
+getGrid(16);
