@@ -1,4 +1,15 @@
 div {
-    border: 1px solid red;
-    padding: 10px;
+    border: 1px dotted red;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(16, auto);
+    justify-content: center;
+    padding: 2em;
+}
+
+#etchBox {
+    height: 2em;
+    width: 2em;
 }
