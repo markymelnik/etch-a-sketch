@@ -8,35 +8,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="title">
         <div id="titleText">Etch-A-Sketch!</div>
     </div>
-
     <div class="mainContainer">
-
         <div class="sketchProperties">
-
             <div class="slider">
                 <div class="colorSliderText">Color</div>
                 <input type="color" vlaue="#000000" id="colorSlider">
             </div>
-
             <div class="slider">
-                <div class="gridSliderText">Grid Size</div>
-                <input type="range" min="1" max="64" vlaue="10" id="gridSizeSlider">
+                <div class="gridSliderText">Size</div>
+                <input type="range" min="1" max="80" vlaue="40" id="sizeSlider">
             </div>
-
             <div class="button">
                 <button class="resetButton">Reset</button>
             </div>
-        
         </div>
-
         <div class="etchContainer"></div>
-
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
