@@ -14,11 +14,27 @@
     </div>
 
     <div class="mainContainer">
+
         <div class="sketchProperties">
-            <div class="colorSlider">Color Slider</div>
-            <div class="gridSizeSlider">Grid Size Slider</div>
+
+            <div class="slider">
+                <div class="colorSliderText">Color</div>
+                <input type="color" vlaue="#000000" id="colorSlider">
+            </div>
+
+            <div class="slider">
+                <div class="gridSliderText">Grid Size</div>
+                <input type="range" min="1" max="64" vlaue="10" id="gridSizeSlider">
+            </div>
+
+            <div class="button">
+                <button class="resetButton">Reset</button>
+            </div>
+        
         </div>
+
         <div class="etchContainer"></div>
+
     </div>
 
     <script src="script.js"></script>

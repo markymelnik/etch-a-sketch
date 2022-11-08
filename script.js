@@ -1,7 +1,10 @@
+// Etch-A-Sketch
 
 const etchContainer = document.querySelector('.etchContainer');
+const resetButton = document.querySelector('.resetButton');
+const colorChoice = document.querySelector('#colorSlider');
 
-getGrid(16);
+window.onload = getGrid(16);
 
 const etchBox = document.querySelectorAll('.etchBox');
 
@@ -22,8 +25,14 @@ etchBox.forEach(box => {
 etchBox.forEach(box => {
     box.addEventListener('mouseover', () => {
         if (isMouseClicked == true) {
-            box.style.background = 'black';
+            box.style.background = colorChoice.value;
         }
+    })
+});
+
+resetButton.addEventListener('click', () => {
+    etchBox.forEach(box => {
+        box.style.background = 'white';
     })
 });
 
